@@ -1,10 +1,3 @@
-const colorPalette = {
-  primary: '#dc541b',
-  secondary: '#dbd1cc',
-  black: '#130804',
-  white: 'white',
-};
-
 export default {
   fonts: {
     family: 'Open Sans',
@@ -16,7 +9,9 @@ export default {
     },
   },
   colors: {
-    ...colorPalette,
-    tinted: colorPalette.secondary,
+    primary: '#f0d920;',
+    secondary: '#dbd1cc',
+    black: '#130804',
+    white: 'white',
   },
 };
