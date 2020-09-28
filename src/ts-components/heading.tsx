@@ -14,8 +14,4 @@ const Heading = ({ children }: Props) => (
   <StyledHeading>{children}</StyledHeading>
 );
 
-const test = '';
-test = 'asd';
-console.log(test);
-
 export default Heading;
