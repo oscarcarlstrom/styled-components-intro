@@ -7,11 +7,7 @@ const StyledApp = styled.div`
 `;
 
 function App() {
-  return (
-    <StyledApp>
-      hello
-    </StyledApp>
-  );
+  return <StyledApp>hello</StyledApp>;
 }
 
 export default App;
