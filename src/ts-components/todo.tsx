@@ -7,7 +7,7 @@ import Heading from './heading';
 const Todo = () => (
   <ThemeProvider theme={myTheme}>
     <GlobalStyles />
-    <Heading>JSX Todo</Heading>
+    <Heading>TSX Todo</Heading>
   </ThemeProvider>
 );
 
