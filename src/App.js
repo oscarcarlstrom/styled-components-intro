@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Heading from 'ts-components/heading';
 
 const StyledApp = styled.div`
   background-color: gold;
@@ -7,7 +8,12 @@ const StyledApp = styled.div`
 `;
 
 function App() {
-  return <StyledApp>hello</StyledApp>;
+  return (
+    <StyledApp>
+      <Heading>TS heading</Heading>
+      hello
+    </StyledApp>
+  );
 }
 
 export default App;
