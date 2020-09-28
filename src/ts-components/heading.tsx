@@ -6,7 +6,8 @@ interface Props {
 }
 
 const StyledHeading = styled.h2`
-  font-size: 3rem;
+  font-size: ${({ theme }) => theme.fonts.sizes.heading};
+  font-weight: ${({ theme }) => theme.fonts.weights.light};
 `;
 
 const Heading = ({ children }: Props) => (

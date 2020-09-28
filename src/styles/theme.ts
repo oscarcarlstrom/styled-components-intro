@@ -7,6 +7,10 @@ export default {
       regular: 400,
       bold: 600,
     },
+    sizes: {
+      body: '1rem',
+      heading: '3rem',
+    },
   },
   colors: {
     primary: '#f0d920;',

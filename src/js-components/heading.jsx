@@ -1,8 +1,9 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledHeading = styled.h2`
-  font-size: 3rem;
+  font-size: ${({ theme }) => theme.fonts.sizes.heading};
+  font-weight: ${({ theme }) => theme.fonts.weights.light};
 `;
 
 const Heading = ({ children }) => <StyledHeading>{children}</StyledHeading>;
