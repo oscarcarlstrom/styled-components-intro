@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { InputHTMLAttributes } from 'react';
 import styled from 'styled-components';
 
 const StyledInput = styled.input`
@@ -10,6 +10,8 @@ const StyledInput = styled.input`
   font-weight: inherit;
 `;
 
-const Input = props => <StyledInput {...props} />;
+const Input = (props: InputHTMLAttributes<HTMLInputElement>) => (
+  <StyledInput {...props} />
+);
 
 export default Input;

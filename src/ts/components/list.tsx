@@ -1,7 +1,12 @@
 import React from 'react';
 import ListItem from './list-item';
 
-const List = ({ items, onDone }) => {
+interface Props {
+  items: string[];
+  onDone: (index: number) => void;
+}
+
+const List = ({ items, onDone }: Props) => {
   const listItems = items.map((item, index) => (
     <ListItem key={`${item}-${index}`} removeItem={() => onDone(index)}>
       {item}

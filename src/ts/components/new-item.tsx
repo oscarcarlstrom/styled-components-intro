@@ -3,12 +3,16 @@ import Button from './button';
 import styled from 'styled-components';
 import Input from './input';
 
+interface Props {
+  onAdd: (item: string) => void;
+}
+
 const StyledForm = styled.form`
   display: flex;
   align-items: center;
 `;
 
-const NewItem = ({ onAdd }) => {
+const NewItem = ({ onAdd }: Props) => {
   const [item, setItem] = useState('');
   return (
     <StyledForm

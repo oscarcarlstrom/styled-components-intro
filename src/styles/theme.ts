@@ -3,6 +3,7 @@ const colorPalette = {
   secondary: '#689090',
   black: '#130804',
   lightGray: '#7a7a7a',
+  darkGray: '#a09e9e',
   white: 'white',
 };
 
@@ -28,4 +29,5 @@ export default {
   spacing: {
     horizontal: '10px',
   },
+  transition: '400ms ease',
 };

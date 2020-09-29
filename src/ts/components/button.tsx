@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme, disabled }) =>
-    disabled ? theme.colors.lightGray : theme.colors.textOnPrimaryBg};
+    disabled ? theme.colors.darkGray : theme.colors.textOnPrimaryBg};
   transition: color ${({ theme }) => theme.transition};
   height: 3rem;
   width: 3rem;
@@ -20,6 +20,8 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = props => <StyledButton {...props} />;
+const Button = (props: ButtonHTMLAttributes<HTMLButtonElement>) => (
+  <StyledButton {...props} />
+);
 
 export default Button;
