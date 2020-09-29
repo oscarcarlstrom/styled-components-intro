@@ -1,3 +1,36 @@
+# Intro til styled-components
+Eksempler med og uten typescript
+
+## Basics
+1. Ta utgangspunkt i en eksisterende react app (CRA er brukt her)
+2. Installer **styled-components** f.eks: ````npm i styled-components````
+3. Du kan starte å bruke styled-components for å style komponentene dine
+
+## Theme
+I styled-components bruker du en wrapper component <ThemeProvider>. Som gir alle underliggende React komponentene tilgang til en prop kalt **theme** via context API-et.
+
+## Global Styles
+Du kan bruke funksjonen **createGlobalStyle** for å skape en spesiell type styled-component. Denne brukes for å definere global styling. Komponenten bør plasseres øverst i komponent-treet, sånn at style-taggen også injectes øverst. På den måten kan du enkelt kan overstyre resets osv.
+
+## TypeScript
+Hvis du vil bruke typescript (pssst! det gjør theming veldig deilig) må du:
+1. Installere typescript (det trenger du ikke hvis du bruker CRA)
+2. Lag en tsconfig.json
+3. Installer @types/styled-components f.eks: ````npm i styled-components -D````
+4. Lag en *styled.d.ts* (husk å  inkludere den i tsconfig!)
+5. Her importerer du theme-filen din og bruker typeof for å  definere typen for theme-objektet ditt. Så extender du DefaultTheme interfaces med denne typen.
+6. Det gjør at du får autocomplete på alle properties i theme 🤯🎉🥳
+
+## Linting - Stylelint
+Vi dekker ikke ESLint her, selv om det er lagt til i prosjetet. Isteden fokuserer vi på Stylelint:
+1. Installer disse pakkene: **stylelint, stylelint-config-recommended, stylelint-config-styled-components, stylelint-processor-styled-components**
+2. Opprett en fil kalt *.stylelintrc* i rotmappen til prosjektet ditt.
+3. Legg til et npm script i *package.json*, f.eks: ````"lint:styles": "stylelint './src/**/*.{js,jsx,ts,tsx}'"````
+4. Bruk dette med annen linting, i en pre-commit hook f.eks.
+5. Hvis du ønsker å linte ved build må du bruke en egen loader i webpack for dette: https://styled-components.com/docs/tooling#webpack. Når du bruker CRA må du ejecte for å få dette til, eller bruke en annen app template, som: [react-app-rewired](https://www.npmjs.com/package/react-app-rewired). Men det gjør vi ikke i denne demoen.
+
+## Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -11,11 +44,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
