@@ -16,6 +16,6 @@
     "noEmit": true,
     "jsx": "react"
   },
-  "include": ["src/ts-components", "src/styles/theme", "styled.d.ts"],
-  "exclude": ["src/js-components", "src/App.js", "src/index.js"]
+  "include": ["src/ts", "src/styles/theme", "styled.d.ts"],
+  "exclude": ["src/js", "src/App.js", "src/index.js"]
 }
