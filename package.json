@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "npm run lint && npm run tsc",
     "eject": "react-scripts eject",
-    "lint:styles": "stylelint './src/**/*.{js,jsx,ts,tsx}' --fix",
+    "lint:styles": "stylelint './src/**/*.{js,jsx,ts,tsx}'",
     "lint:scripts": "eslint '*/**/*.{js,jsx,ts,tsx}' --fix",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "tsc": "tsc"
@@ -57,7 +57,7 @@
     }
   },
   "lint-staged": {
-    "*.{jsx,tsx}": ["stylelint --fix", "eslint --fix"],
+    "*.{jsx,tsx}": ["stylelint", "eslint --fix"],
     "*.{ts,tsx}": "bash -c tsc tsconfig.json",
     "*.js": "eslint --fix"
   }
