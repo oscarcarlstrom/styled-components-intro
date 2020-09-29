@@ -1,4 +1,4 @@
-import theme from './src/styles/theme';
+import theme from './src/ts/theme';
 
 type CustomTheme = typeof theme;
 
