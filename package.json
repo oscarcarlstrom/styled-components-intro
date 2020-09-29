@@ -16,11 +16,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "npm run lint && npm run tsc",
     "eject": "react-scripts eject",
     "lint:styles": "stylelint './src/**/*.{js,jsx,ts,tsx}'",
-    "lint:scripts": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix",
-    "lint": "npm run lint:scripts && npm run lint:styles"
+    "lint:scripts": "eslint '*/**/*.{js,jsx,ts,tsx}' --fix",
+    "lint": "npm run lint:scripts && npm run lint:styles",
+    "tsc": "tsc"
   },
   "eslintConfig": {
     "extends": "react-app"
