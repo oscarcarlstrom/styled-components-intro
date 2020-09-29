@@ -7,10 +7,42 @@ Eksempler med og uten typescript
 3. Du kan starte å bruke styled-components for å style komponentene dine
 
 ## Theme
-I styled-components bruker du en wrapper component <ThemeProvider>. Som gir alle underliggende React komponentene tilgang til en prop kalt **theme** via context API-et.
+I styled-components bruker du en wrapper component <ThemeProvider>. Som gir alle underliggende React komponentene tilgang til en prop kalt **theme** via context API-et:
+```js
+    <ThemeProvider theme={myTheme}>
+      <YourComponent>
+      <YourOtherComponent>
+    </ThemeProvider>
+```
 
 ## Global Styles
 Du kan bruke funksjonen **createGlobalStyle** for å skape en spesiell type styled-component. Denne brukes for å definere global styling. Komponenten bør plasseres øverst i komponent-treet, sånn at style-taggen også injectes øverst. På den måten kan du enkelt kan overstyre resets osv.
+
+
+```js
+import React from 'react';
+import { createGlobalStyle } from 'styled-components';
+import { reset } from 'styled-reset';
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+`;
+
+const GlobalStyles = () => <GlobalStyle />;
+
+export default GlobalStyles;
+
+```
+
+```js
+<ThemeProvider theme={myTheme}>
+  <GlobalStyles />
+  <YourComponent>
+  <YourOtherComponent>
+</ThemeProvider>
+```
 
 ## TypeScript
 Hvis du vil bruke typescript (pssst! det gjør theming veldig deilig) må du:
