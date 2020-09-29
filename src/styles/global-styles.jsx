@@ -13,11 +13,24 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: ${({ theme }) =>
-      `${theme.fonts.family}, ${theme.fonts.fallbacks.join(', ')}`} 
+      `${theme.fonts.family}, ${theme.fonts.fallbacks.join(', ')}`};
+    font-weight: ${({ theme }) => theme.fonts.weights.light};
+    width: 900px;
+    margin: auto; 
   }
 
   * {
     box-sizing: border-box;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  button, input {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-appearance: none;
   }
 `;
 

@@ -17,5 +17,4 @@
     "jsx": "react"
   },
   "include": ["src/ts", "src/styles/theme", "styled.d.ts"],
-  "exclude": ["src/js", "src/App.js", "src/index.js"]
 }

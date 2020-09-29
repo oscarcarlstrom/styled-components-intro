@@ -1,3 +1,11 @@
+const colorPalette = {
+  primary: '#0377c7',
+  secondary: '#689090',
+  black: '#130804',
+  lightGray: '#7a7a7a',
+  white: 'white',
+};
+
 export default {
   fonts: {
     family: 'Open Sans',
@@ -9,12 +17,15 @@ export default {
     },
     sizes: {
       body: '1rem',
-      heading: '3rem',
+      heading: '1.5rem',
     },
   },
   colors: {
-    primary: '#0377c7',
-    black: '#130804',
-    white: 'white',
+    ...colorPalette,
+    textOnPrimaryBg: colorPalette.white,
+  },
+  boxShadow: `0px 2px 11px 1px ${colorPalette.lightGray}`,
+  spacing: {
+    horizontal: '10px',
   },
 };
