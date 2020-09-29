@@ -57,7 +57,7 @@
     }
   },
   "lint-staged": {
-    "*.{jsx,tsx}": "stylelint --fix && eslint --fix",
+    "*.{jsx,tsx}": ["stylelint --fix", "eslint --fix"],
     "*.{ts,tsx}": "tsc tsconfig.json --noEmit",
     "*.js": "eslint --fix"
   }
