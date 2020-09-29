@@ -7,8 +7,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 
   body {
@@ -30,7 +29,9 @@ const GlobalStyle = createGlobalStyle`
   button, input {
     font-family: inherit;
     font-size: inherit;
-    -webkit-appearance: none;
+    /* Lint /*/
+    /* -webkit-appearance: none; */
+    appearance: none;
   }
 `;
 
