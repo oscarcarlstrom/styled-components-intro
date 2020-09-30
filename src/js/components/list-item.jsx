@@ -5,12 +5,12 @@ import Button from './button';
 const StyledListItem = styled.li`
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: ${({ theme }) => theme.spacing.md};
   word-break: break-all;
 `;
 
 const StyledButton = styled(Button)`
-  margin-right: ${({ theme }) => theme.spacing.horizontal};
+  margin-right: ${({ theme }) => theme.spacing.sm};
 `;
 
 const ListItem = ({ children, removeItem }) => {

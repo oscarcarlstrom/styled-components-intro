@@ -32,8 +32,10 @@ export default {
   },
   boxShadow: `0px 2px 11px 1px ${colorPalette.lightGray}`,
   spacing: {
-    horizontal: '10px',
     pagePadding: '15px',
+    lg: '35px',
+    md: '15px',
+    sm: '10px',
   },
   transition: '400ms ease',
   screenSizes: screenSizes,

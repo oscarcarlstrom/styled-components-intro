@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledInput = styled.input`
-  padding: 1rem;
-  margin-right: ${({ theme }) => theme.spacing.horizontal};
+  padding: ${({ theme }) => theme.spacing.md};
+  margin-right: ${({ theme }) => theme.spacing.sm};
   border: solid 1px ${({ theme }) => theme.colors.secondary};
   border-radius: 4px;
   flex-grow: 1;

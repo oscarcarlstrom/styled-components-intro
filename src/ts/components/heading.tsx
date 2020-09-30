@@ -10,20 +10,20 @@ const StyledHeading = styled.h2`
   display: flex;
   align-items: baseline;
   font-weight: inherit;
-  margin-bottom: 0.7em;
+  margin-bottom: ${({ theme }) => theme.spacing.md};
 
   &:before {
     content: 'TS';
     font-weight: ${({ theme }) => theme.fonts.weights.bold};
     background-color: ${({ theme }) => theme.colors.primary};
     color: ${({ theme }) => theme.colors.textOnPrimaryBg};
-    margin-right: ${({ theme }) => theme.spacing.horizontal};
+    margin-right: ${({ theme }) => theme.spacing.sm};
     height: 2em;
     width: 2em;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding: 10px;
+    padding: ${({ theme }) => theme.spacing.sm};
   }
 `;
 

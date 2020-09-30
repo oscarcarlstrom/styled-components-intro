@@ -8,7 +8,8 @@ import NewItem from './new-item';
 
 const StyledContainer = styled.div`
   width: 400px;
-  padding: 0px 15px 25px;
+  padding: 0 ${({ theme }) => theme.spacing.md};
+  padding-bottom: ${({ theme }) => theme.spacing.lg};
 `;
 
 const Todo = () => {

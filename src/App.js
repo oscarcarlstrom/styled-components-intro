@@ -6,8 +6,7 @@ import TodoTS from './ts/components/todo';
 
 const StyledH1 = styled.h1`
   font-size: 400%;
-  margin: 0.5em 0;
-  font-weight: ${({ theme }) => theme.fonts.weights.light};
+  margin: ${({ theme }) => theme.spacing.lg} 0;
   @media ${({ theme }) => theme.breakPoints.lgUp} {
     text-align: center;
   }
