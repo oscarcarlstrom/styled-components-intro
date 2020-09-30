@@ -12,8 +12,13 @@ const StyledH1 = styled.h1`
 `;
 
 const StyledContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
+  width: 900px;
+  max-width: 100%;
+  margin: auto;
+  @media (min-width: 900px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 function App() {

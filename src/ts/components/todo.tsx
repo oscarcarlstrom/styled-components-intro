@@ -7,7 +7,7 @@ import List from './list';
 import NewItem from './new-item';
 
 const StyledContainer = styled.div`
-  width: 40%;
+  width: 400px;
   padding: 0px 15px 25px;
 `;
 

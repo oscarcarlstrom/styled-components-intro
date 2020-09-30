@@ -14,8 +14,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${({ theme }) =>
       `${theme.fonts.family}, ${theme.fonts.fallbacks.join(', ')}`};
     font-weight: ${({ theme }) => theme.fonts.weights.light};
-    width: 900px;
-    margin: auto; 
   }
 
   * {
