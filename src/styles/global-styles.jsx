@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${({ theme }) =>
       `${theme.fonts.family}, ${theme.fonts.fallbacks.join(', ')}`};
     font-weight: ${({ theme }) => theme.fonts.weights.light};
+    padding: 0 ${({ theme }) => theme.spacing.pagePadding};
   }
 
   * {

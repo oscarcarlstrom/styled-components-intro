@@ -7,6 +7,11 @@ const colorPalette = {
   white: 'white',
 };
 
+const screenSizes = {
+  large: 900,
+  unit: 'px',
+};
+
 export default {
   fonts: {
     family: 'Open Sans',
@@ -28,6 +33,12 @@ export default {
   boxShadow: `0px 2px 11px 1px ${colorPalette.lightGray}`,
   spacing: {
     horizontal: '10px',
+    pagePadding: '15px',
   },
   transition: '400ms ease',
+  screenSizes: screenSizes,
+  breakPoints: {
+    lgUp: `(min-width: ${screenSizes.large}${screenSizes.unit})`,
+    lgDown: `(max-width: ${screenSizes.large - 1}${screenSizes.unit})`,
+  },
 };

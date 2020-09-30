@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-// import myTheme from '../../styles/theme';
 import myTheme from '../theme';
 import GlobalStyles from '../../styles/global-styles';
 import Heading from './heading';

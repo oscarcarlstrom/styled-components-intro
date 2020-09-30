@@ -6,7 +6,7 @@ const StyledHeading = styled.h2`
   display: flex;
   align-items: baseline;
   font-weight: inherit;
-  margin: 0.7em 0;
+  margin-bottom: 0.7em;
 
   &:before {
     content: 'JS';
