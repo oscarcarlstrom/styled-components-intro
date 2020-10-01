@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import myTheme from '../theme';
-import GlobalStyles from '../../styles/global-styles';
 import Heading from './heading';
 import List from './list';
 import NewItem from './new-item';
@@ -23,7 +22,6 @@ const Todo = () => {
 
   return (
     <ThemeProvider theme={myTheme}>
-      <GlobalStyles />
       <StyledContainer>
         <Heading>To do</Heading>
         <NewItem onAdd={addItem} />
