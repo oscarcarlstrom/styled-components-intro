@@ -1,3 +1,5 @@
+import { keyframes } from 'styled-components';
+
 const colorPalette = {
   primary: '#0377c7',
   secondary: '#689090',
@@ -47,5 +49,17 @@ export default {
   breakPoints: {
     lgUp: `(min-width: ${screenSizes.large}${screenSizes.unit})`,
     lgDown: `(max-width: ${screenSizes.large - 1}${screenSizes.unit})`,
+  },
+  animations: {
+    slideInUp: keyframes`
+      from {
+        transform: translate(0, 100%);
+      }
+    
+      to {
+        transform: translate(0, 0);
+      }
+    `,
+    duration: '500ms',
   },
 };

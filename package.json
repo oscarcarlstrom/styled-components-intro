@@ -56,7 +56,10 @@
     }
   },
   "lint-staged": {
-    "*.{jsx,tsx}": ["stylelint", "eslint --fix"],
+    "*.{jsx,tsx}": [
+      "stylelint",
+      "eslint --fix"
+    ],
     "*.{ts,tsx}": "bash -c tsc tsconfig.json",
     "*.js": "eslint --fix"
   }

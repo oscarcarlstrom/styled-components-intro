@@ -12,6 +12,8 @@ const StyledListItem = styled.li`
   align-items: center;
   margin-top: ${({ theme }) => theme.spacing.md};
   word-break: break-all;
+  animation-duration: ${({ theme }) => theme.animations.duration};
+  animation-name: ${({ theme }) => theme.animations.slideInUp};
 `;
 
 const StyledButton = styled(Button)`
