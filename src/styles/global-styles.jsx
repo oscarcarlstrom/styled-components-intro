@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${({ theme }) =>
       `${theme.fonts.family}, ${theme.fonts.fallbacks.join(', ')}`};
-    font-weight: ${({ theme }) => theme.fonts.weights.light};
+    font-weight: ${({ theme }) => theme.fonts.weights.regular};
     padding: 0 ${({ theme }) => theme.spacing.pagePadding};
   }
 
@@ -28,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
   button, input {
     font-family: inherit;
     font-size: inherit;
+    font-weight: inherit;
     /* Lint /*/
     /* -webkit-appearance: none; */
     appearance: none;

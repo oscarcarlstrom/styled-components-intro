@@ -37,8 +37,13 @@ export default {
     md: '15px',
     sm: '10px',
   },
+  borders: {
+    default: `solid 2px ${colorPalette.secondary}`,
+    radius: '4px',
+  },
   transition: '400ms ease',
   screenSizes: screenSizes,
+  containerWidth: `${screenSizes.large}${screenSizes.unit}`,
   breakPoints: {
     lgUp: `(min-width: ${screenSizes.large}${screenSizes.unit})`,
     lgDown: `(max-width: ${screenSizes.large - 1}${screenSizes.unit})`,
