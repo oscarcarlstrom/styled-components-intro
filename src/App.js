@@ -19,7 +19,7 @@ const StyledContainer = styled.div`
   max-width: 100%;
   @media ${({ theme }) => theme.breakPoints.lgUp} {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
   }
   @media ${({ theme }) => theme.breakPoints.lgDown} {
