@@ -17,6 +17,7 @@ const StyledButton = styled.button`
     content: ${({ type }) =>
       type === 'submit' ? '"\\FF0B"' : '"\\2713"'}; /*Må escape \ med \ -> \\*/
     font-size: 2rem;
+    line-height: 2rem;
   }
 `;
 
